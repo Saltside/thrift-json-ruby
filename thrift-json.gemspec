@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'thrift/json/version'
+require 'thrift/utf8_json/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "thrift-json"
-  spec.version       = Thrift::Json::VERSION
+  spec.name          = "thrift-utf8_json"
+  spec.version       = Thrift::Utf8Json::VERSION
   spec.authors       = ["ahawkins"]
   spec.email         = ["adam@hawkins.io"]
   spec.summary       = %q{Helpful patches for serializing/deserializing Thrift objeects}
   spec.description   = %q{}
-  spec.homepage      = "https://github.com/saltside/thrift-json-ruby"
+  spec.homepage      = "https://github.com/saltside/thrift-utf_8json-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

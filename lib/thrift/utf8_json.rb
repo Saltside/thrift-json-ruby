@@ -1,4 +1,4 @@
-require 'thrift/json/version'
+require 'thrift/utf8_json/version'
 require 'thrift'
 
 module Thrift

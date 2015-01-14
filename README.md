@@ -1,4 +1,4 @@
-# thrift-json
+# thrift-ut8\_json
 
 This gem contains patches for working with [thrift][] struts & JSON
 serialization/deserialization. Most importantly it contains a fix for
@@ -11,7 +11,7 @@ the [acceptance test][].
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'thrift-json'
+gem 'thrift-utf8_json'
 ```
 
 And then execute:
@@ -20,17 +20,17 @@ And then execute:
 
 Or install it yourself as:
 
-	$ gem install thrift-json
+	$ gem install thrift-utf8_json
 
 ## Usage
 
-`thrift-json` adds two classes to the `thrift` module:
+`thrift-utf8_json` adds two classes to the `Thrift` module:
 `Thrift::JsonDerserializer` & `Thrift::JsonSerializer`. They mimic the
 interface of `Thirft::Deserializer` & `Thrift::Serializer` except they
 require no arguments to `initialize`. Here's an example:
 
 ```ruby
-require 'thrift-json'
+require 'thrift-utf8_json'
 
 struct = SomeThriftStruct.new
 
@@ -44,7 +44,7 @@ deserialized = Thrift::JsonDeserializer.new.deserialize(SomeThriftStruct.new, js
 
 ## Contributing
 
-1. Fork it ( https://github.com/saltside/thrift-json/fork )
+1. Fork it ( https://github.com/saltside/thrift-utf8_json-ruby/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
